@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/003/699/090/original/medical-health-logo-design-for-business-and-company-vector.jpg">
+<title>HEALTH INSURANCE</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width:800px;
+        position:relative;
+        display:fixed;
+        margin: 20px auto;
+        margin-top:20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(96, 91, 91, 0.1);
+        
+    }
+    input[type="text"]:focus {
+        background-color: white;
+        color: black;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        
+    }
+    label {
+        display: block;
+        margin-bottom:3px;
+        font-weight: 300;
+       
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #676161;
+        border-style: groove;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #495c6f;
+        color: #fff;
+       
+        border-style: groove;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #332b6f;
+    }
+    /* Disable copying and pasting */
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
+    @media screen and (max-width: 768px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+
+ 
+    
+    li{
+        display:inline;
+        
+        
+    }
+#file{
+
+    margin-left:-40px;
+    margin-bottom: 10px;
+}
+#HLT{
+    color:rgb(72, 140, 4);
+}
+#logo{
+    width:150px;
+    height:80px;
+    display:inline;
+    position:absolute;
+    margin-inline-start: 290px;
+    
+    
+}
+hr{
+    margin-bottom: 15px;
+}
+
+  
+</style>
+<script>
+    // Disable copy and paste
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+        alert('Copying is not allowed.');
+    });
+
+    document.addEventListener('cut', function(e) {
+        e.preventDefault();
+        alert('Cutting is not allowed.');
+    });
+
+    document.addEventListener('paste', function(e) {
+        e.preventDefault();
+        alert('Pasting is not allowed.');
+    });
+</script>
+</head>
+<body>
+   
+
+<div class="container">
+    <ul class="hdr">
+        <li><h2><span ID="HLT">HEALTH</span> <span ID="HLT2">INSURANCE</span>  <span><img id="logo"src="https://elixi.co.za/wp-content/uploads/2024/02/2.png"alt="Health Insurance"></span></h2></li>
+        
+    </ul>
+
+   
+   
+    <ul>
+    <form action="" method="post" name="Health_ins_form">
+        
+        <!--This is format2 -->
+        <ul>
+        <li><input type="file" id="file" name="file" accept="image/*"></li>
+        </ul>
+        <hr>
+        <div class="form-group">
+            <label for="imageName">IMAGE NAME:</label>
+            <input type="text" id="imageName" name="imageName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="state1">STATE 1:</label>
+            <input type="text" id="state1" name="state1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="country">COUNTRY_1:</label>
+            <input type="text" id="country" name="country"required>
+        </div>
+        <div class="form-group">
+            <label for="height">HEIGHT:</label>
+            <input type="text" id="height" name="height"required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="billingName">BILLING NAME:</label>
+            <input type="text" id="billingName" name="billingName"required>
+        </div>
+
+        <div class="form-group">
+            <label for="state_2">STATE_2:</label>
+            <input type="text" id="state_2" name="state_2"required>
+        </div>
+        <div class="form-group">
+            <label for="ph_no2">PH_NO2:</label>
+            <input type="number" id="ph_no2" name="ph_no2"required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="pastSurg">PAST SURG:</label>
+            <input type="text" id="pastSurg" name="pastSurg"required>
+        </div>
+
+        <div class="form-group">
+            <label for="ploicyNo">POLICY NO:</label>
+            <input type="text" id="ploicyNo" name="ploicyNo"required>
+        </div>
+        <div class="form-group">
+            <label for="name_P_Holder">NAME_P_HOLDER:</label>
+            <input type="text" id="name_P_Holder" name="name_P_Holder"required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="dob">DOB:</label>
+            <input type="text" id="dob" name="dob"required>
+        </div>
+        <div class="form-group">
+            <label for="medicine">MEDICINE:</label>
+            <input type="text" id="medicine" name="medicine"required>
+        </div>
+        <div class="form-group">
+            <label for="pillRate">PILL RATE:</label>
+            <input type="text" id="pillRate" name="pillRate"required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="totalAmt">TOTAL AMT:</label>
+            <input type="text" id="totalAmt" name="totalAmt"required>
+        </div>
+
+        <!--This is format2 -->
+
+       
+            <div class="form-group">
+                <label for="recordNo">RECORD NO:</label>
+                <input type="text" id="recordNo" name="recordNo"required>
+            </div>
+            <div class="form-group">
+                <label for="resAddress">RES_ADDRESS:</label>
+                <input type="text" id="resAddress" name="resAddress"required>
+            </div>
+            <div class="form-group">
+                <label for="zip_1">ZIP_1:</label>
+                <input type="text" id="zip_1" name="zip_1"required>
+            </div>
+            <div class="form-group">
+                <label for="sex_1">SEX_1:</label>
+                <input type="number" id="sex_1" name="sex_1"required>
+            </div>
+            <div class="form-group">
+                <label for="weight">WEIGHT:</label>
+                <input type="text" id="weight" name="weight"required>
+            </div>
+            <div class="form-group">
+                <label for="shipperName">SHIPPER NAME:</label>
+                <input type="text" id="shipperName" name="shipperName"required>
+            </div>
+            <div class="">
+                <label for="zip_2">ZIP_2:</label>
+                <input type="text" id="zip_2" name="zip_2"required>
+            </div>
+            <div class="form-group">
+                <label for="alcoholic">ALCOHOLIC:</label>
+                <input type="text" id="alcoholic" name="alcoholic"required>
+            </div>
+            <div class="form-group">
+                <label for="diabetic">DIABETIC:</label>
+                <input type="text" id="diabetic" name="diabetic"required>
+            </div>
+            <div class="form-group">
+                <label for="d_B_Life_Assure">D_B_LIFE ASSURE:</label>
+                <input type="text" id="d_B_Life_Assure" name="d_B_Life_Assure"required>
+            </div>
+            <div class="form-group">
+                <label for="stmName">STM NAME:</label>
+                <input type="text" id="stmName" name="stmName"required>
+            </div>
+            <div class="form-group">
+                <label for="sex2">SEX_2:</label>
+                <input type="text" id="sex2" name="sex2"required>
+            </div>
+            <div class="form-group">
+                <label for="dosage">DOSAGE:</label>
+                <input type="text" id="dosage" name="dosage"required>
+            </div>
+            <div class="form-group">
+                <label for="cost">COST:</label>
+                <input type="text" id="cost" name="cost"required>
+            </div>
+            <div class="form-group">
+                <label for="remark">REMARK:</label>
+                <input type="text" id="remark" name="remark"required>
+            </div>
+
+        
+
+        <!--This is format2 -->
+         
+            <div class="form-group">
+                <label for="customerName">CUSTOMER NAME:</label>
+                <input type="text" id="customerName" name="customerName"required>
+            </div>
+            <div class="form-group">
+                <label for="city1">CITY_1:</label>
+                <input type="text" id="city1" name="city1"required>
+            </div>
+            <div class="form-group">
+                <label for="ph_no1">PH_NO1:</label>
+                <input type="text" id="ph_no1" name="ph_no1"required>
+            </div>
+            <div class="form-group">
+                <label for="d_birth">D_BIRTH:</label>
+                <input type="text" id="d_birth" name="d_birth"required>
+            </div>
+            <div class="form-group">
+                <label for="bloodGp">BLOOD GP:</label>
+                <input type="text" id="bloodGp" name="bloodGp"required>
+            </div>
+
+            <div class="form-group">
+                <label for="city2">CITY_2:</label>
+                <input type="text" id="city2" name="city2"required>
+            </div>
+            <div class="form-group">
+                <label for="country2">COUNTRY_2:</label>
+                <input type="text" id="country2" name="country2"required>
+            </div>
+            <div class="form-group">
+                <label for="smoker">SMOKER:</label>
+                <input type="text" id="smoker" name="smoker"required>
+            </div>
+            <div class="form-group">
+                <label for="allergiesd">ALLERGIESD:</label>
+                <input type="text" id="allergiesd" name="allergiesd"required>
+            </div>
+            
+            <div class="form-group">
+                <label for="p_Inst">P_INST:</label>
+                <input type="text" id="p_Inst" name="p_Inst"required>
+            </div>
+            <div class="form-group">
+                <label for="stm_Code">STM CODE:</label>
+                <input type="text" id="stm_Code" name="stm_Code"required>
+            </div>
+            <div class="form-group">
+                <label for="cardName">CARD NAME:</label>
+                <input type="text" id="cardName" name="cardName"required>
+            </div>
+            <div class="form-group">
+                <label for="tablets">TABLETS:</label>
+                <input type="text" id="tablets" name="tablets"required>
+            </div>
+            <div class="form-group">
+                <label for="shippingCost">SHIPPING COST:</label>
+                <input type="text" id="shippingCost" name="shippingCost"required>
+            </div>
+            
+
+        
+
+        
+        <!-- Add more form groups for other fields -->
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+    </form>
+
+
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz1f_dhAxi9G_QE3O5i6S8iEt5KassexjbzdQUwqJbMax-zEKxUig3bWhy7poMpk7TiTg/exec'
+
+const form = document.forms['Health_ins_form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+</script>
+<script>
+    
+    let url = "Api_Endpoint_Url";
+    
+    let file = document.querySelector("input");
+    
+    let img = document.querySelector("img");
+    
+    file.addEventListener('change',()=>{
+        let fr = new FileReader();
+        
+        fr.addEventListener('loadend',()=>{
+            
+            let res = fr.result;
+            
+            img.src=res;
+            
+            let spt = res.split("base64,")[1];
+            
+            let obj = {
+                base64:spt,
+                type:file.files[0].type,
+                name:file.files[0].name
+            }
+            
+            fetch(url,{
+                method:"POST",
+                body:JSON.stringify(obj)
+            })
+           
+            .then(r=>r.text())
+           
+            .then(data=>console.log(data))
+ 
+        })
+        
+        fr.readAsDataURL(file.files[0])
+    })
+</script>
+</body>
+</html>
